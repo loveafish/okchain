@@ -1,6 +1,6 @@
 # Okchain 
 
-Copyright (c) 2018-2019 The Okchain Project.   
+Copyright(c) The go-okchain Authors 2019,  All rights reserved.
 
 
 ## Development resources
