@@ -88,20 +88,6 @@ Finally, build the okchaind and okchaincli program using the following command.
 cd okchain
 make
 ```
-#### On Linux and OS X
-
-* Install the dependencies
-* Change to the root of the source code directory and build:
-
-        cd okchain
-        make
-
-* The resulting executables can be found in `build/release/bin`
-
-* Add `PATH="$PATH:$HOME/okchain/build/release/bin"` to `.profile`
-
-* Run Okchain with `Okchaind --detach`
-
 
 ## Running Okchaind
 
