@@ -11,16 +11,6 @@ Copyright (c) 2018-2019 The Okchain Project.
 - GitHub: [https://github.com/ok-chain/okchain](https://github.com/ok-chain/okchain)
 
 
-## Supported Operating System
-
-| Operating System      | Processor | Status |
-| --------------------- | --------  |--------|
-| Ubuntu 16.04          |  amd64    | Supported
-| OSX 10.13             |  amd64    | Supported
-| Centos 7              |  amd64    | 2019 Q2
-| Windows 10            |  amd64    | 2019 Q2
-
-
 ## Introduction
 
 Okchain is a private, secure, decentralised digital currency. 
@@ -67,11 +57,37 @@ library archives (`.a`).
 | ------------ | ------------- | -------- | ------------------ | ------------ | ------- | -------- | -------- |
 | RocksDB      | 5.10.4         | NO       | `build-essential`  | `base-devel` | `gcc`             | NO       |                |
 
+
+## Supported Operating System
+
+| Operating System      | Processor | Status |
+| --------------------- | --------  |--------|
+| Ubuntu 16.04          |  amd64    | Supported
+| OSX 10.13             |  amd64    | Supported
+| Centos 7              |  amd64    | 2019 Q2
+| Windows 10            |  amd64    | 2019 Q2
+
+
 ### Build instructions
 
-Okchain uses the CMake build system and a top-level [Makefile](Makefile) that
-invokes cmake commands as needed.
+Clone the repository to a directory of your choosing:
 
+```
+git clone https://github.com/ok-chain/okchain
+```
+
+Building okchaind and okchaincli requires the Go compiler:
+
+```
+brew install go
+```
+
+Finally, build the okchaind and okchaincli program using the following command.
+
+```
+cd okchain
+make
+```
 #### On Linux and OS X
 
 * Install the dependencies
