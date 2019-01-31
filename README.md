@@ -1,14 +1,14 @@
 # Okchain 
 
 Copyright (c) 2018-2019 The Okchain Project.   
-Portions Copyright (c) 2012-2013 The Cryptonote developers.
+
 
 ## Development resources
 
 - Web: [okcoin.com/chain](https://www.okcoin.com/chain)
 - Forum: [forum.okchain.org](https://forum.okchain.org)
 - Mail: [dev@okcoin.com](mailto:dev@okcoin.com)
-- GitHub: [https://github.com/ok-chain/okchain](https://github.com/okchain-project/okchain)
+- GitHub: [https://github.com/ok-chain/okchain](https://github.com/ok-chain/okchain)
 
 
 ## Build
@@ -21,7 +21,7 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
 
 ## Introduction
 
-Okchain is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
+Okchain is a private, secure, untraceable, decentralised digital currency. 
 
 **Privacy:** Okchain uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
 
