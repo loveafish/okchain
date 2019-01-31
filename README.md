@@ -18,7 +18,7 @@ Copyright (c) 2018-2019 The Okchain Project.
 | Ubuntu 16.04          |  amd64    | Supported
 | OSX 10.13             |  amd64    | Supported
 | Centos 7              |  amd64    | 2019 Q2
-| Windows               |  amd64    | 2019 Q2
+| Windows 10            |  amd64    | 2019 Q2
 
 
 ## Introduction
