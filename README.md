@@ -23,7 +23,7 @@ Copyright (c) 2018-2019 The Okchain Project.
 
 ## Introduction
 
-Okchain is a private, secure, untraceable, decentralised digital currency. 
+Okchain is a private, secure, decentralised digital currency. 
 
 **Privacy:** Okchain uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
 
