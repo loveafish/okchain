@@ -11,12 +11,14 @@ Copyright (c) 2018-2019 The Okchain Project.
 - GitHub: [https://github.com/ok-chain/okchain](https://github.com/ok-chain/okchain)
 
 
-## Build
+## Supported Operating System
 
 | Operating System      | Processor | Status |
-| --------------------- | -------- |--------|
-| Ubuntu 16.04          |  amd64   | [![Ubuntu 16.04 amd64](https://build.okchain.org/png?builder=Okchain-static-ubuntu-amd64)](https://build.okchain.org/builders/okchain-static-ubuntu-amd64)
-| OSX 10.13             |  amd64   | [![OSX 10.12 amd64](https://build.okchain.org/png?builder=Okchain-static-osx-10.12)](https://build.okchain.org/builders/okchain-static-osx-10.12)
+| --------------------- | --------  |--------|
+| Ubuntu 16.04          |  amd64    | Supported
+| OSX 10.13             |  amd64    | Supported
+| Centos 7              |  amd64    | 2019 Q2
+| Windows               |  amd64    | 2019 Q2
 
 
 ## Introduction
@@ -27,7 +29,6 @@ Okchain is a private, secure, untraceable, decentralised digital currency.
 
 **Security:** Using the power of a distributed peer-to-peer consensus network, every transaction on the network is cryptographically secured. Individual wallets have a 25 word mnemonic seed that is only displayed once, and can be written down to backup the wallet. Wallet files are encrypted with a passphrase to ensure they are useless if stolen.
 
-**Untraceability:** By taking advantage of ring signatures, a special property of a certain type of cryptography, Okchain is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer.
 
 ## About this project
 
@@ -62,8 +63,8 @@ sources are also used for statically-linked builds because distribution
 packages often include only shared library binaries (`.so`) but not static
 library archives (`.a`).
 
-| Dep          | Min. version  | Vendored | Debian/Ubuntu pkg  | Arch pkg     | Fedora            | Optional | Purpose        |
-| ------------ | ------------- | -------- | ------------------ | ------------ | ----------------- | -------- | -------------- |
+| Dep          | Min. version  | Vendored | Debian/Ubuntu pkg  | Arch pkg     | Fedora  | Optional | Purpose  |
+| ------------ | ------------- | -------- | ------------------ | ------------ | ------- | -------- | -------- |
 | RocksDB      | 5.10.4         | NO       | `build-essential`  | `base-devel` | `gcc`             | NO       |                |
 
 ### Build instructions
@@ -127,12 +128,3 @@ The output of `mdb_dump -s blocks <path to blockchain dir>` and `mdb_dump -s blo
 These records are dumped as hex data, where the first line is the key and the second line is the data.
 
 
-
-The Okchain software supports the following environments:
-* Ubuntu 16.04 (Ubuntu 16.10 recommended)
-* MacOS Darwin 10.12 and higher (MacOS 10.13.x recommended)
-
-
-Environments will be supported in 2019 Q2:
-* Windows
-* Centos 7
