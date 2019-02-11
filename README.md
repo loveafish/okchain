@@ -33,7 +33,7 @@ As with many development projects, the repository on Github is considered to be 
 * More Operating System supported
 * More exciting features.
 
-## Building Okchain
+## Installation
 ### Dependencies
 The following table summarizes the tools and libraries required to build. A
 few of the libraries are also included in this repository (marked as
