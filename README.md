@@ -1,6 +1,8 @@
+![](./images/OKIB-log.png)
+
 # Okchain 
 
-Copyright(c) The go-okchain Authors 2019,  All rights reserved.
+Copyright (c) 2018-2019 The Okchain Project.   
 
 
 ## Development resources
