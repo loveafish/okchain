@@ -1,3 +1,4 @@
+<img src="./images/OKIB-cn.png" width = "100" height = "100">
 ![](./images/OKIB-cn.png)
 
 # Okchain 
