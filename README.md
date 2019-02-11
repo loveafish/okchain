@@ -1,4 +1,4 @@
-Go Okchain
+## Go Okchain
 
 <img src="./images/OKIB-cn.png" width = "200" height = "200">
 
