@@ -18,7 +18,6 @@ This is the core implementation of Okchain. It is open source and completely fre
 As with many development projects, the repository on Github is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
 
 ## Implemented features
-
 * Sharding, including network and transaction sharding
 * PoW or VRSF for joining the network
 * New BLS-pbft consensus mechanism
@@ -35,9 +34,7 @@ As with many development projects, the repository on Github is considered to be 
 * More exciting features.
 
 ## Building Okchain
-
 ### Dependencies
-
 The following table summarizes the tools and libraries required to build. A
 few of the libraries are also included in this repository (marked as
 "Vendored"). By default, the build uses the library installed on the system,
@@ -51,8 +48,7 @@ library archives (`.a`).
 | ------------ | ------------- | -------- | ------------------ | ------------ | ------- | -------- | -------- |
 | RocksDB      | 5.10.4         | NO       | `build-essential`  | `base-devel` | `gcc`             | NO       |                |
 
-
-## Supported Operating System
+### Supported Operating System
 
 | Operating System      | Processor | Status |
 | --------------------- | --------  |--------|
@@ -63,7 +59,6 @@ library archives (`.a`).
 
 
 ### Build from Source code
-
 First, prepare the Go compiler:
 
 ```
@@ -85,7 +80,7 @@ make
 
 Note: `okchaind` is the okchain node, which is to produce blocks and join the consensus process, etc. And `okchaincli` is a command-line tool to interacte with the `okchaind`.
 
-## Start Okchaind
+### Run Okchaind using binaries
 
 The build places the binary in `bin/` sub-directory within the build directory
 from which cmake was invoked (repository root by default). To run in
@@ -98,7 +93,7 @@ To run in background:
 
     ./bin/okchaind --detach
 
-## Run Okchain from docker
+### Run Okchain from docker
 
 * Docker quick start
 
