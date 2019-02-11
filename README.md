@@ -1,4 +1,4 @@
-![](./images/OKIB-logo.png)
+![](./images/OKIB-cn.png)
 
 # Okchain 
 
