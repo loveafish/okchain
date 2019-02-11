@@ -1,10 +1,10 @@
 ## Go Okchain
+This is the Official Golang implementation of the Okchain protocol.
 
-<img src="./images/OKIB-cn.png" width = "200" height = "200">
+<img src="./images/OKIB-cn.png" width = "350" height = "300" div align=center>
 
 Overview - [Homepage](https://www.okcoin.com/chain)
 ==========================
-This is the Official Golang implementation of the Okchain protocol.
 [![Build Status](travis-ci.org/xxx/xxx.svg)](travis-ci.org/xxx/xxx)
 
 Okchain is a private, secure, decentralised digital currency. 
