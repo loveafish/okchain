@@ -3,7 +3,7 @@
 We welcome contributions to the Okchain Project in many forms, and
 there's always plenty to do!
 
-Before contributing, it's important to review the Okchain ![](Code of Conduct) firstly.
+Before contributing, it's important to review the Okchain ![Code of Conduct](##) firstly.
 
 ### Ways to contribute
 There are many ways to contribute to Okchain.
