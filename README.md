@@ -1,17 +1,11 @@
-# Okchain 
+## Go Okchain
+This is the Official Golang implementation of the Okchain protocol.
 
-Copyright(c) The go-okchain Authors 2019,  All rights reserved.
+<img src="./images/OKIB-cn.png" width = "600" height = "300" div align=center>
 
-
-## Development resources
-
-- Web: [okcoin.com/chain](https://www.okcoin.com/chain)
-- Forum: [forum.okchain.org](https://forum.okchain.org)
-- Mail: [dev@okcoin.com](mailto:dev@okcoin.com)
-- GitHub: [https://github.com/ok-chain/okchain](https://github.com/ok-chain/okchain)
-
-
-## Introduction
+Overview - [Homepage](https://www.okcoin.com/chain)
+==========================
+[![Build Status](travis-ci.org/xxx/xxx.svg)](travis-ci.org/xxx/xxx)
 
 Okchain is a private, secure, decentralised digital currency. 
 
@@ -19,31 +13,28 @@ Okchain is a private, secure, decentralised digital currency.
 
 **Security:** Using the power of a distributed peer-to-peer consensus network, every transaction on the network is cryptographically secured. Individual wallets have a 25 word mnemonic seed that is only displayed once, and can be written down to backup the wallet. Wallet files are encrypted with a passphrase to ensure they are useless if stolen.
 
-
-## About this project
-
 This is the core implementation of Okchain. It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of Okchain that uses the protocol and network in a compatible manner.
 
 As with many development projects, the repository on Github is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
 
-**Anyone is welcome to contribute to Okchain's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
+## Implemented features
+* Sharding, including network and transaction sharding
+* PoW or VRSF for joining the network
+* New BLS-pbft consensus mechanism
+* Coinbase rewards
+* Ecc-p256 signature and public address
+* Supporting ethereum smart contracts
+* Gossip protocol
+* Node recovery mechanism
 
-## License
+## Fulture features
+* State sharding
+* Support WASM-based smart contracts
+* More Operating System supported
+* More exciting features.
 
-See [LICENSE](LICENSE).
-
-## Contributing
-
-If you want to help out, see [CONTRIBUTING](CONTRIBUTING.md) for a set of guidelines.
-
-    
-
-Packaging for your favorite distribution would be a welcome contribution!
-
-## Compiling Okchain from source
-
+## Installation
 ### Dependencies
-
 The following table summarizes the tools and libraries required to build. A
 few of the libraries are also included in this repository (marked as
 "Vendored"). By default, the build uses the library installed on the system,
@@ -57,8 +48,7 @@ library archives (`.a`).
 | ------------ | ------------- | -------- | ------------------ | ------------ | ------- | -------- | -------- |
 | RocksDB      | 5.10.4         | NO       | `build-essential`  | `base-devel` | `gcc`             | NO       |                |
 
-
-## Supported Operating System
+### Supported Operating System
 
 | Operating System      | Processor | Status |
 | --------------------- | --------  |--------|
@@ -68,28 +58,29 @@ library archives (`.a`).
 | Windows 10            |  amd64    | 2019 Q2
 
 
-### Build instructions
-
-Clone the repository to a directory of your choosing:
-
-```
-git clone https://github.com/ok-chain/okchain
-```
-
-Building okchaind and okchaincli requires the Go compiler:
+### Build from Source code
+First, prepare the Go compiler:
 
 ```
 brew install go
 ```
 
-Finally, build the okchaind and okchaincli program using the following command.
+Then, clone the `okchain` repository to a specified directory:
+
+```
+git clone https://github.com/ok-chain/okchain
+```
+
+Finally, build the `okchaind` and `okchaincli` program using the following command.
 
 ```
 cd okchain
 make
 ```
 
-## Running Okchaind
+Note: `okchaind` is the okchain node, which is to produce blocks and join the consensus process, etc. And `okchaincli` is a command-line tool to interacte with the `okchaind`.
+
+### Run Okchaind using binaries
 
 The build places the binary in `bin/` sub-directory within the build directory
 from which cmake was invoked (repository root by default). To run in
@@ -102,7 +93,7 @@ To run in background:
 
     ./bin/okchaind --detach
 
-## Run Okchain from docker
+### Run Okchain from docker
 
 * Docker quick start
 
@@ -129,4 +120,25 @@ The output of `mdb_dump -s blocks <path to blockchain dir>` and `mdb_dump -s blo
 
 These records are dumped as hex data, where the first line is the key and the second line is the data.
 
+
+## More information
+
+- Web: [okcoin.com/chain](https://www.okcoin.com/chain)
+- Forum: [forum.okchain.org](https://forum.okchain.org)
+- Mail: [dev@okcoin.com](mailto:dev@okcoin.com)
+- GitHub: [https://github.com/ok-chain/okchain](https://github.com/ok-chain/okchain)
+
+
+## Contributing
+
+**Anyone is welcome to contribute to Okchain's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
+
+If you want to help out, see [CONTRIBUTING](CONTRIBUTING.md) for a set of guidelines.
+
+Packaging for your favorite distribution would be a welcome contribution!
+
+## License
+
+Copyright (c) 2018-2019 The Okchain Project.   
+More details, See [LICENSE](LICENSE).
 
