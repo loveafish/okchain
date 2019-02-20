@@ -46,7 +46,24 @@ library archives (`.a`).
 
 | Dep          | Min. version  | Vendored | Debian/Ubuntu pkg  | Arch pkg     | Fedora  | Optional | Purpose  |
 | ------------ | ------------- | -------- | ------------------ | ------------ | ------- | -------- | -------- |
-| RocksDB      | 5.10.4         | NO       | `build-essential`  | `base-devel` | `gcc`             | NO       |                |
+| RocksDB      | 5.10.4        | NO       | `build-essential`  | `base-devel` | `gcc`   | NO       |          |               | ------------ | ------------- | -------- | ------------------ | ------------ | ------- | -------- | -------- |
+| BLS          | NO        	 | NO       | `llvm libgmp-dev libssl-dev` | NO | `g++`   | NO       |          |
+
+### Build BLS
+To install from source, you can run the following commands:
+```bash
+git clone https://github.com/okblockchainlab/bls 
+cd bls
+make
+make install
+```
+The library is then installed under `/usr/local/`.
+ - To use it for the current session:
+```bash
+export LD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib
+```
+ - To use it permanently, add `/usr/local/lib` to `/etc/ld.so.conf` , then run `ldconfig` as root
+
 
 ### Supported Operating System
 
